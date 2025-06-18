@@ -1,65 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu Portfólio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meu portfólio</title>
 </head>
 <body>
     <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="Avatar do Gustavo" class="rounded-circle" width="150" height="150" srcset="">
+        <img src="img/avatar-perfil.png" alt="Avatar do Gustavo" class="rounded-circle" width="150" height="150" />
         <p class="lead">Eu sou Gustavo</p>
-        <h1>Sou um estudante de Programação</h1>
+        <h1>Sou um estudante</h1>
         <p>
-            Estudo matérias gerais, com foco atual em Programação e Ciência da Computação. 
-            Meu objetivo é criar um portfólio como parte de um trabalho.
+            Estudo matérias gerais, com foco atual em Programação e Ciência da Computação. Gosto muito dessas matérias, atualmente meu foco 
         </p>
         <h2>Minhas habilidades</h2>
         <div>
             <p class="badge bg-secondary">Raciocínio rápido</p>
             <p class="badge bg-secondary">Muito racional</p>
             <p class="badge bg-secondary">Bom em equipe</p>
-            <p class="badge bg-secondary">>Pensamento lógico</p>
+            <p class="badge bg-secondary">Pensamento lógico</p>
         </div>
     </header>
+
     <main class="container mt-5">
-        <h2>Meus gostos</h2>
-        <div class="row">
+            <h2>Meus gostos</h2>
+            <div class="row">
             <!-- Projeto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/foto-site-1.png" class="card-img-top" alt="Imagem do site de passar o tempo">
+                    <img src="img/foto-site-1.png" class="card-img-top" alt="Imagem do site de passar o tempo" />
                     <div class="card-body">
-                        <h5 class="card-title">Mercado de passar o tempo: Um site de compras de periféricos</h5>
-                        <p class="card-text">Esse site consiste em uma loja virtual da qual você pode procurar periféricos da sua escolha, no Kabum você pdoe procurar de peças de computador até controles de video game e muito mais.</p>
-                        <button type="button" class="btn btn-link">veja o site</button>
+                        <h5 class="card-title">
+                            Mercado de passar o tempo: Um site de compras de periféricos
+                        </h5>
+                         <p class="card-text">
+                            Site onde gosto e confio para comprar periféricos. Convido você a conhecer o Kabum, uma loja virtual com
+                            diversas peças para computador, controles de videogame e muito mais.
+                        </p>
+                        <button
+                            type="button"
+                            class="btn btn-link"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal1"
+                        >
+                            Veja o site
+                        </button>
                     </div>
                 </div>
             </div>
+        
             <!-- Projeto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/foto-site-2.jpg" class="card-img-top" alt="Imagem do site de passar o tempo">
+                    <img src="img/foto-site-2.jpg" class="card-img-top" alt="Imagem do site de passar o tempo" />
                     <div class="card-body">
                         <h5 class="card-title">Site das lives: O site onde eu jogo ao vivo</h5>
-                        <p class="card-text">Esse site é para engajar pessoas que tentam começar a ganhar um dinheiro e visibilidade com aquilo que gosta de fazer, como exemplos são jogos, assistir, falar com o pessoal que te assiste</p>
-                        <button type="button" class="btn btn-link">veja o site</button>
+                        <p class="card-text">
+                            Esse site é para engajar pessoas que querem ganhar dinheiro e visibilidade com o que gostam de fazer,
+                            como jogar, interagir e conversar com a audiência.
+                        </p>
+                        <button
+                            type="button"
+                            class="btn btn-link"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal2"
+                        >
+                            Veja o site
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Mercado de passar o tempo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Site onde gosto e confio para comprar periféricos.</p>
+                    <p>Convido você a conhecer o Kabum, uma loja virtual com diversas peças para computador, controles de videogame e muito mais.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.kabum.com.br" target="_blank" class="btn btn-primary">Ver site ao vivo</a>
+                    <a href="#" class="btn btn-secondary disabled" tabindex="-1" aria-disabled="true">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Site das lives</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esse site é para engajar pessoas que querem ganhar dinheiro e visibilidade com o que gostam de fazer,</p>
+                    <p>como jogar e conversar com o pessoal que for te assistir.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.twitch.tv/bergaa007" target="_blank" class="btn btn-primary">Ver site ao vivo</a>
+                    <a href="#" class="btn btn-secondary disabled" tabindex="-1" aria-disabled="true">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container mt-5">
         <h2>Entre em contato</h2>
         <div>
-            <a href="https://github.com/Berga006">GitHub</a>
+            <a href="https://github.com/Berga006" target="_blank">GitHub</a>
             <a href="mailto:bergaminigustavo@gmail.com">Enviar e-mail</a>
         </div>
-        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Gustavo Bergamini</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
